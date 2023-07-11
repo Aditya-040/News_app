@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-   <script src="script.js" defer></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <nav>
-        <div class="main-nav flex container">
-            <a href="#"><img src="./assets/logo.png" alt=""></a>
-            <div class="nav-links">
-                
-                <ul>
-                    <li class="hover-link nav-item">Trending NOW</li>
-                    <li class="hover-link nav-item">finance</li>
-                    <li class="hover-link nav-item">Sports</li>
-                    <li class="hover-link nav-item">Nearby-news</li>
-                </ul>
-            </div>
-            <div class="search-bar">
-                <input type="text" class="news-input" placeholder="eg. technology">
-                <button class="search-button">Search</button>
-            </div>
+      <div class="main-nav flex container">
+        <a href="#" class="company-logo"
+          ><img src="./assets/logo.png" alt=""
+        /></a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-link nav-item">Trending NOW</li>
+            <li class="hover-link nav-item">finance</li>
+            <li class="hover-link nav-item">Sports</li>
+            <li class="hover-link nav-item">Nearby-news</li>
+          </ul>
         </div>
+        <div class="search-bar">
+          <input type="text" class="news-input" placeholder="eg. technology" />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
     </nav>
-</body>
+    <main>
+      <div class="cards-container container flex " id="cards-container">
+        
+      </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+              <img
+                src="https://via.placeholder.com/400x200"
+                alt=""
+                id="news-img"
+              />
+            </div>
+            <div class="card-content">
+              <h1 class="news-title" id="news-title">This is card title</h1>
+              <h6 class="news-source" id="news-source">End dated 23/12/12</h6>
+              <p class="news-desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+                iste aliquam natus autem adipisci expedita ullam ratione voluptas
+                quia neque?
+              </p>
+            </div>
+          </div>
+    </template>
+  </body>
 </html>
